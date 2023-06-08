@@ -1,0 +1,58 @@
+/*Cuerpo de toda la pagina y fondo*/
+body{
+    background-color: rgb(198, 198, 234);
+    background-image: url("../imgs/background.png");
+    
+}
+/*Barra de navegacion*/
+.navbar-light {
+    background-color:#1D3C5E; 
+  }
+
+.navbar-nav {
+    margin-left: auto;
+  }
+
+#navbarNav{
+    padding-right: 50px;
+}
+.navbar-text, .navbar-brand, .nav-link, #homeText{
+    color: white;}
+
+
+
+
+/* Parte de body, formulario*/
+
+h2{
+    font-size: 24px;color: antiquewhite;
+}
+.cointainerFormulario{
+   
+    background-color:#1D3C5E;
+    text-align: center;
+    margin-left: 150px;
+    margin-right: 150px;
+    border-radius: 10px; 
+    position: relative;
+}
+
+.form-floating{
+    text-align: center;
+    
+    
+
+}
+
+/*Boton del formulario*/
+.btn {
+    background-color:#323334;
+}
+
+
+/*Pie de pagina*/
+.footer{
+    background-color:#1D3C5E;
+    font-size: 24px;color: aliceblue;
+    text-align: center;
+}
