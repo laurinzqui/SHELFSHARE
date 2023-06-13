@@ -13,6 +13,12 @@
     padding-bottom: 25px;
 }
 
+.navbar-text, .navbar-brand, .nav-link, #homeText{
+
+  font-family: 'Josefin Sans';
+  font-weight: bold;
+  color: white;
+}
 
 
 .footer{
@@ -81,8 +87,10 @@
    
   }
   .imageTextContainer p{
-    background-color: gray;
-    border-radius: 30px;
+    background-color: #4A6787;
+    border-radius: 52px;
+    border: 15px solid #4A6787;
+    box-sizing: border-box
   }
 
 
@@ -107,7 +115,7 @@
 
   .imageTextContainer{
     width:100%;
-    padding: 60px;
+    padding: 50px;
   }
   .imageTextContainer p{
     max-height:100%;
@@ -122,18 +130,25 @@
     height:auto
     
   }
+
+  .imageTextContainer a{
+    color: white;
+  }
   .footer a{
     text-decoration: none;
     color: white;
+    font-family: 'Josefin Sans';
+    font-weight: bold;
+    
     
   }
   
   .carousel-control-next-icon{
-    margin-left: 60px;
+    margin-left: 90px;
   }
 
   .carousel-control-prev-icon{
-    margin-right: 60px;
+    margin-right: 90px;
   }
   
   .nameDeveloper{
