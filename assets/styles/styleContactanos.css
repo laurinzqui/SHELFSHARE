@@ -19,14 +19,12 @@ h2{
   
    padding-inline-start: 35px;
    padding-inline-end: 35px;
-   margin-top: 10%;
-   margin-bottom: 10%;
+   margin-top: 5%;
    
 }
 
 .containerTerminos{
-  margin-top: 10%;
-  margin-bottom: 10%;
+  margin-top: 5%;
   padding-inline-start: auto;
   padding-inline-end: auto;
 }
@@ -80,17 +78,24 @@ p{
 
 
 /*Pie de pagina*/
-.footer{
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height:auto;
-  }
+footer{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height:auto;
+  background-color: #1D3C5E;
+  text-align: center;
+  display:block;
+  padding:10px;
+}
 
-.containerFooter{
-    background-color:#1D3C5E;
-    font-size: 24px;color: aliceblue;
-    text-align: center;   
+.footer a{
+  text-decoration: none;
+  color: white;
+  font-family: 'Josefin Sans';
+  font-weight: bold;
+  
+  
 }
 
 @media(max-width: 700px) { .containerTerminos {
