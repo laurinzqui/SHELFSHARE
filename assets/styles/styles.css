@@ -2,23 +2,34 @@
 body{
     background-color: rgb(198, 198, 234);
     background-image: url("../imgs/background.png");
+    padding-bottom: 40px;
     
 }
 /*Barra de navegacion*/
-.navbar-light {
-    background-color:#1D3C5E; 
+  .navbar-light {
+    background-color: #1D3C5E;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  
+  .navbar-brand {
+    color: white;
+    font-weight: 600;
+  }
+  
+  .nav-link {
+    color: white;
+    font-weight: 400;
+  }
+  
+  #linkNavegación {
+    font-weight: 100;
+  }
+  
+  .navbar-light .navbar-toggler-icon {
+    filter: invert(100%);
   }
 
-.navbar-nav {
-    margin-left: auto;
-  }
-
-#navbarNav{
-    padding-right: 50px;
-}
-.navbar-text, .navbar-brand, .nav-link, #homeText{
-    color: white;}
-
+  
 
 
 
@@ -26,33 +37,67 @@ body{
 
 h2{
     font-size: 24px;color: antiquewhite;
+    text-align: center;
+    margin-block: 25px;
 }
-.cointainerFormulario{
+.containerFormulario{
+   background-color:#1D3C5E;
+   border-radius: 35px;
+  
+   padding-inline-start: 35px;
    
-    background-color:#1D3C5E;
-    text-align: center;
-    margin-left: 150px;
-    margin-right: 150px;
-    border-radius: 10px; 
-    position: relative;
 }
 
-.form-floating{
-    text-align: center;
-    
-    
-
-}
 
 /*Boton del formulario*/
 .btn {
-    background-color:#323334;
+    background-color:#000000;
+    margin-bottom: 50px;
+}
+.btn:hover {
+  background-color: #989898;
+}
+
+.containerGeneral{
+    display: block;
+    margin:35px;
+  padding: 15px;
+    
+    
+}
+
+label{
+    font-family: 'Josefin Sans';
+    color: aliceblue;    
+}
+
+
+/* Diseño terminos y condiciones*/
+.contenido{  
+    background-color:#1359a4 ;
+      padding: 20px;
+    border-radius: 25px;
+    margin: 70px;   
+    text-align: justify;
+  }     
+
+p{
+    font-family: 'Josefin Sans';
+    font-weight: bold;
+    color: white;
 }
 
 
 /*Pie de pagina*/
 .footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height:auto;
+  }
+
+.containerFooter{
     background-color:#1D3C5E;
     font-size: 24px;color: aliceblue;
-    text-align: center;
+    text-align: center;   
 }
