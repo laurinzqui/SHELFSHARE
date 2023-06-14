@@ -1,0 +1,105 @@
+/*Cuerpo de toda la pagina y fondo*/
+body{
+    background-color: rgb(198, 198, 234);
+    background-image: url("../imgs/background.jpg");
+    padding-bottom: 40px;
+    
+}
+
+
+/* Parte de body, formulario*/
+h2{
+    font-size: 24px;color: antiquewhite;
+    text-align: center;
+    margin-block: 25px;
+}
+.containerFormulario{
+   background-color:#1D3C5E;
+   border-radius: 35px;
+  
+   padding-inline-start: 35px;
+   padding-inline-end: 35px;
+   margin-top: 10%;
+   margin-bottom: 10%;
+   
+}
+
+.containerTerminos{
+  margin-top: 10%;
+  margin-bottom: 10%;
+  padding-inline-start: auto;
+  padding-inline-end: auto;
+}
+
+.imageContainer img{
+  height:auto;
+  display:block;
+  object-position: center;
+  max-height:50%;
+  max-width: 50%;
+  margin: auto;
+}
+
+/*Boton del formulario*/
+.btn {
+    background-color:#000000;
+    margin-bottom: 50px;
+}
+.btn:hover {
+  background-color: #989898;
+}
+
+.containerGeneral{
+    display: block;
+    margin:35px;
+  padding: 15px;
+    
+    
+}
+
+label{
+    font-family: 'Josefin Sans';
+    color: aliceblue;    
+}
+
+
+/* Diseño terminos y condiciones*/
+.contenido{  
+    background-color:#1359a4 ;
+      padding: 20px;
+    border-radius: 25px;
+    margin: 70px;   
+    text-align: justify;
+  }     
+
+p{
+    font-family: 'Josefin Sans';
+    font-weight: bold;
+    color: white;
+}
+
+
+/*Pie de pagina*/
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height:auto;
+  }
+
+.containerFooter{
+    background-color:#1D3C5E;
+    font-size: 24px;color: aliceblue;
+    text-align: center;   
+}
+
+@media(max-width: 700px) { .containerTerminos {
+    font-size: x-small;
+  }
+
+  body{
+    background-size: 90%;
+    
+}
+
+}

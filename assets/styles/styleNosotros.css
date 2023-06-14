@@ -7,17 +7,11 @@
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 10%;
+    margin-bottom: 10%;
     border-radius: 52px;
-    padding-bottom: 25px;
-}
-
-.navbar-text, .navbar-brand, .nav-link, #homeText{
-
-  font-family: 'Josefin Sans';
-  font-weight: bold;
-  color: white;
+    font-family: 'Josefin Sans';
+    text-align: center;
 }
 
 
@@ -39,27 +33,11 @@
 
 }
 
-.navbar-light {
-    background-color:#1D3C5E;
-    
-  }
-
-  .navbar-nav {
-    margin-left: auto;
-  }
-
-  #navbarNav{
-    padding-right: 50px;
-  }
 
   body {
-    background-image: url("../imgs/background.png");
-    
+    background-image: url("../imgs/background.jpg");
+    background-size: cover;
    }
-
-    .navbar-text, .navbar-brand, .nav-link, #homeText{
-    color: white;
-  }
 
 
   .nameDeveloper{
@@ -81,7 +59,7 @@
   .imageTextContainer{
 
     display: block;
-    justify-content: center;
+    justify-content: justify;
     align-items: center;
     
    
@@ -89,7 +67,7 @@
   .imageTextContainer p{
     background-color: #4A6787;
     border-radius: 52px;
-    border: 15px solid #4A6787;
+    border: 25px solid #4A6787;
     box-sizing: border-box
   }
 
@@ -115,7 +93,7 @@
 
   .imageTextContainer{
     width:100%;
-    padding: 50px;
+    padding: 15%;
   }
   .imageTextContainer p{
     max-height:100%;
@@ -160,4 +138,10 @@
     width:10px;
     height:10px;
     border-radius: 50%;
+}
+
+@media(max-width: 480px) { .imageTextContainer {
+  font-size:small
+}
+
 }

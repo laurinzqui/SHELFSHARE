@@ -10,39 +10,39 @@
     integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 
     <link rel="stylesheet" href="./assets/styles/styleNosotros.css">
+    <link rel="stylesheet" href="./assets/styles/styleNavBar.css">
     <link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
     
 </head>
 <body >
 
     
-        <div class="barraNavegacion" id="navbarExample">
-          <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container-fluid">
-            <a class="navbar-brand" href="#">SHELFSHARE</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item active">
-                  <a href="#" class="nav-link active" id="homeText">
-                    INICIO
-                  </a>
-                </li>
-                <li class="nav-item active">
-                  <a href="#" class="nav-link" id="PerfilText">
-      
-                    PERFIL
-      
-                  </a>
-                </li>
-      
-              </ul>
-            </div>
-          </div>
-          </nav>
-        </div>
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+      <a class="navbar-brand">SHELFSHARE</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a href="index.html" class="nav-link" id="homeText">
+              INICIO
+            </a>
+          </li>
+          <li class="nav-item active">
+            <a href="perfil.html" class="nav-link" id="perfilText">
+              PERFIL
+            </a>
+          </li>
+          <li class="nav-item active">
+            <a href="#" class="nav-link" id="notificacionesText">NOTIFICACIONES</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
         <div class="containerCarousel">
             <div id="carouselExampleIndicators" class="carousel slide">
@@ -55,6 +55,7 @@
                   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
                   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
                   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8" aria-label="Slide 9"></button>
                 </div>
                 <div class="carousel-inner">
                   <div class="carousel-item active"> 
@@ -94,6 +95,45 @@
                       </div>
                     </div>
 
+                  </div>
+                  <div class="carousel-item">
+                    <!--here we define a container in order to achieve the responsive design-->
+                    <div class="containerNameDeveloper">
+                      <div class="row">
+
+                        <div class="col-sm-12 col-md-12 col-lg-6 ">
+                          <div class="nameDeveloper">
+                        
+                          </div>
+                        </div>
+
+                        <div class="col-sm-12 col-md-12 col-lg-6 ">
+                          <div class="nameDeveloper">
+                        
+                            <p>Mision y vision</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="containerImageText">
+                      <div class="row">
+
+                        <div class="col-sm-12 col-md-6 col-lg-6">
+                          <div class="imageTextContainer" id="sixthTextSlide">
+                            <p>Misión: <br> 
+                              Nuestra misión es crear una plataforma en línea para que los usuarios puedan acceder a una amplia variedad de libros, descubrir nuevas obras que puedan leer llevando un registro personal de cuáles obras han leído, así como su avance en cada una. De la misma forma tener la oportunidad de compartir reseñas, y participar en comunidades de lectores.</p>
+                          </div>
+                        </div>
+
+                        <div class="col-sm-12 col-md-6 col-lg-6">
+                          <div class="imageTextContainer" id="sixthTextSlide">
+                            <p>Visión: <br>
+                              Nuestra visión es convertirnos en la plataforma líder para los amantes de la lectura, ofreciendo una experiencia digital única y enriquecedora. Nos esforzamos por ser el destino principal donde los lectores pueden descubrir nuevos libros, conectar con una comunidad de lectores apasionados y encontrar recomendaciones personalizadas.</p>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
                   </div>
                   <div class="carousel-item">
                     <!--here we define a container in order to achieve the responsive design-->
