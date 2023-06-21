@@ -1,4 +1,8 @@
-     
+    .container-fluid{
+      background-color: #1D3C5E ;
+    }
+
+
  .navbar-light {
     background-color: #1D3C5E;
     font-family: 'Josefin Sans', sans-serif;
