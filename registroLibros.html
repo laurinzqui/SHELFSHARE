@@ -1,146 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./stylesRegistroLibros.css">
-    <link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <title>Registro Libros</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- FONTS -->
+  <link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
+
+  <!-- BOOTSTRAP CSS-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+  <!-- CSS NAVBAR -->
+  <link rel="stylesheet" href="./assets/styles/styleNavBar.css">
+
+  <!-- CSS LOCAL -->
+  <link rel="stylesheet" href="./assets/styles/styleRegistroLibros.css">
+
+  <title>Registro Libros</title>
+
 </head>
+
 <body>
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light" class="pt-5">
-        <div class="container-fluid">
-          <a class="navbar-brand">SHELFSHARE</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item active">
-                <a href="index.html" class="nav-link" id="homeText">
-                  INICIO
-                </a>
-              </li>
-              <li class="nav-item active">
-                <a href="perfil.html" class="nav-link" id="perfilText">
-                  PERFIL
-                </a>
-              </li>
-              <li class="nav-item active">
-                <a href="#" class="nav-link" id="notificacionesText">NOTIFICACIONES</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-  
-                PERFIL
-  
-              </a>
-            </li>
-  
-          </ul>
-        </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light" class="pt-5">
+    <div class="container-fluid">
+      <a class="navbar-brand">SHELFSHARE</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a href="index.html" class="nav-link" id="homeText">
+              INICIO
+            </a>
+          </li>
+          <li class="nav-item active">
+            <a href="perfil.html" class="nav-link" id="perfilText">
+              PERFIL
+            </a>
+          </li>
+          <li class="nav-item active">
+            <a href="#" class="nav-link" id="notificacionesText">NOTIFICACIONES</a>
+          </li>
+        </ul>
       </div>
-      </nav>
-  
-  <section class="vh-100" style="background-color: #2779e2;">
-    <div class="container h-100">
+    </div>
+  </nav>
+
+  <!-- FORMULARIO (https://mdbootstrap.com/docs/standard/extended/registration/#example5) Es el 5to en ese link -->
+
+  <section class="vh-100"> <!-- style="background-color: #2779e2;" Se le quito el color de background que venia-->
+    <div class="container h-100 mt-5">
       <div class="row d-flex justify-content-center align-items-center h-100">
         <div class="col-xl-9">
-  
-          <h1 class="text-white mb-4">Registro de libros</h1>
-  
-          <div class="card" style="border-radius: 15px;">
+
+          <h1 class="text-white mb-3 mt-3">Registro de libros</h1>
+          <!-- Titulo de formulario, el "mb-4" le esta dando un margin debajo de nuestro texto-->
+
+          <div class="card" style="border-radius: 15px;"> <!-- Rectangulo blanco completo de nuestro formulario -->
             <div class="card-body">
-  
-              <div class="row align-items-center pt-4 pb-3">
+
+              <div class="row align-items-center pt-4 pb-3"> <!-- Seccion Nombre de formulario -->
                 <div class="col-md-3 ps-5">
-  
+
                   <h6 class="mb-0">Nombre</h6>
-  
+
                 </div>
                 <div class="col-md-9 pe-5">
-  
+
                   <input type="text" class="form-control form-control-lg" />
-  
+
                 </div>
+
               </div>
-  
-              <hr class="mx-n3">
-  
-              <div class="row align-items-center py-3">
+
+              <hr class="mx-n3"> <!-- Linea horizontal gris que hace separaciones en formulario -->
+
+              <div class="row align-items-center pt-4 pb-3"> <!-- Seccion AUTOR de formulario -->
                 <div class="col-md-3 ps-5">
-  
+
+                  <h6 class="mb-0">Autor</h6>
+
+                </div>
+                <div class="col-md-9 pe-5">
+
+                  <input type="text" class="form-control form-control-lg" />
+
+                </div>
+
+              </div>
+
+              <hr class="mx-n3"> <!-- Linea horizontal gris que hace separaciones en formulario -->
+
+              <div class="row align-items-center py-3"> <!-- Seccion Fecha de publicacion de formulario -->
+                <div class="col-md-3 ps-5">
+
                   <h6 class="mb-0">Fecha de publicacion</h6>
-  
+
                 </div>
                 <div class="col-md-9 pe-5">
-  
-                  <input type="date" class="form-control form-control-lg"  />
-  
+
+                  <input type="date" class="form-control form-control-lg" />
+
                 </div>
               </div>
-  
-              <hr class="mx-n3">
-  
-              <div class="row align-items-center py-3">
+
+              <hr class="mx-n3"> <!-- Linea horizontal gris que hace separaciones en formulario -->
+
+              <div class="row align-items-center py-3"> <!-- Seccion Sinopsis de formulario -->
                 <div class="col-md-3 ps-5">
-  
+
                   <h6 class="mb-0">Sinopsis</h6>
-  
+
                 </div>
                 <div class="col-md-9 pe-5">
-  
+
                   <textarea class="form-control" rows="3" placeholder="Agrega sinopsis"></textarea>
-  
+
                 </div>
               </div>
-  
-              <hr class="mx-n3">
-  
+
+              <hr class="mx-n3"> <!-- Linea horizontal gris que hace separaciones en formulario -->
+
+              <!-- Seccion adjuntar PDF de formulario -->
               <div class="row align-items-center py-3">
                 <div class="col-md-3 ps-5">
-  
-                  <h6 class="mb-0">Agregar PDF</h6>
-  
+                  <h6 class="mb-0">PDF</h6>
                 </div>
                 <div class="col-md-9 pe-5">
-  
                   <input class="form-control form-control-lg" id="formFileLg" type="file" />
-                  <div class="small text-muted mt-2">Agrega PDF del libro
-  
+                  <div class="small mt-2">Agrega PDF del libro</div>
                 </div>
               </div>
-  
-              <hr class="mx-n3">
-  
-              <div class="px-5 py-4">
-                <button type="submit" class="btn btn-primary btn-lg">Registra libro</button>
+
+              <hr class="mx-n3"> <!-- Linea horizontal gris que hace separaciones en formulario -->
+
+              <!-- Seccion ADJUNTAR PORTADA DE LIBRO de formulario -->
+              <div class="row align-items-center py-3">
+                <div class="col-md-3 ps-5">
+                  <h6 class="mb-0">Portada de Libro</h6>
+                </div>
+                <div class="col-md-9 pe-5">
+                  <input class="form-control form-control-lg" id="formFileLg" type="file" />
+                  <div class="small mt-2">Agrega Portada del libro</div>
+                </div>
               </div>
-  
+
+              <hr class="mx-n3"> <!-- Linea horizontal gris que hace separaciones en formulario -->
+
+              <div class="px-5 py-4" style="display: flex; justify-content: center;">
+                <button type="submit" class="btn custom-button btn-lg">Registra libro</button>
+              </div>
+
             </div>
           </div>
-  
+
         </div>
       </div>
     </div>
   </section>
 
+  <!-- JAVASCRIPT LOCAL -->
+  <script src="./assets/scripts/registroLibros.js"></script>
 
-  <footer class="footer">
-    <div class="containerFooter">
-      <div class="row">
-          <div class="col-sm-12 col-md-12 col-lg-12">
-              <a href="contactanos.html">Contáctenos</a>
-          </div>
-      </div>
-    </div>
-  </footer>
-     
-    <script src="./scriptRegistroLibros.script"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  <!-- BOOTSTRAP JAVASCRIPT -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+
 </body>
+
 </html>
