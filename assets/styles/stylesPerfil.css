@@ -19,6 +19,11 @@ body {
     
 
 }
+::placeholder{
+  background-color: #1D3C5E;
+  font-size: 24px;color: aliceblue;
+
+}
 
 .imageContainer {
   display: block;
@@ -114,8 +119,15 @@ h1 {
   font-family: 'Josefin Sans';
   color: aliceblue;
   text-align: center;
- 
 }
+
+span{
+  font-family: 'Josefin Sans';
+  color: aliceblue;
+  text-align: justify;
+  font-size:32px ;
+}
+
 
 
 
