@@ -13,9 +13,6 @@ body::before{
   z-index: -1;
 }
 
-h3 {
-  text-align: center;
-}
 
 footer {
   position: fixed;
