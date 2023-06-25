@@ -19,7 +19,10 @@ h2{
   
    padding-inline-start: 35px;
    padding-inline-end: 35px;
-   margin-top: 5%;
+
+   margin-top: 2%;
+
+
    
 }
 
@@ -49,8 +52,8 @@ h2{
 
 .containerGeneral{
     display: block;
-    margin:35px;
-  padding: 15px;
+    margin:25px;
+  padding: 5px;
     
     
 }
@@ -95,6 +98,16 @@ footer{
   font-family: 'Josefin Sans';
   font-weight: bold;
   
+  
+}
+
+.contenido a{
+  text-decoration: none;
+  color: white;
+  font-family: 'Josefin Sans';
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
   
 }
 

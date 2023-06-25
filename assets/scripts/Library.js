@@ -14,10 +14,7 @@ var arrayLibros = [];
 //lista de libros
 arrayLibros.push(new libro("El Principito", "Antoine de Saint-Exupéry y Kan Nozaki", "https://upload.wikimedia.org/wikipedia/commons/1/1c/El_principito.jpg", "Fecha de Publicación"))
 
-
-
 arrayLibros.push(new libro("El Principito", "Antoine de Saint-Exupéry y Kan Nozaki", "https://upload.wikimedia.org/wikipedia/commons/1/1c/El_principito.jpg", "Fecha de Publicación"))
-
 
 arrayLibros.push(new libro("El Principito", "Antoine de Saint-Exupéry y Kan Nozaki", "https://upload.wikimedia.org/wikipedia/commons/1/1c/El_principito.jpg", "Fecha de Publicación"))
 
@@ -25,13 +22,13 @@ arrayLibros.push(new libro("El Principito", "Antoine de Saint-Exupéry y Kan Noz
 
 arrayLibros.push(new libro("El Principito", "Antoine de Saint-Exupéry y Kan Nozaki", "https://upload.wikimedia.org/wikipedia/commons/1/1c/El_principito.jpg", "Fecha de Publicación"))
 
-
 arrayLibros.push(new libro("El Principito", "Antoine de Saint-Exupéry y Kan Nozaki", "https://upload.wikimedia.org/wikipedia/commons/1/1c/El_principito.jpg", "Fecha de Publicación"))
 
 arrayLibros.push(new libro("El Principito", "Antoine de Saint-Exupéry y Kan Nozaki", "https://upload.wikimedia.org/wikipedia/commons/1/1c/El_principito.jpg", "Fecha de Publicación"))
 
 arrayLibros.push(new libro("El Principito", "Antoine de Saint-Exupéry y Kan Nozaki", "https://upload.wikimedia.org/wikipedia/commons/1/1c/El_principito.jpg", "Fecha de Publicación"))
 
+arrayLibros.push(new libro("El Principito", "Antoine de Saint-Exupéry y Kan Nozaki", "https://upload.wikimedia.org/wikipedia/commons/1/1c/El_principito.jpg", "Fecha de Publicación"))
 
 arrayLibros.push(new libro("El Principito", "Antoine de Saint-Exupéry y Kan Nozaki", "https://upload.wikimedia.org/wikipedia/commons/1/1c/El_principito.jpg", "Fecha de Publicación"))
 

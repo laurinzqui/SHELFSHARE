@@ -1,0 +1,40 @@
+body {
+  background-image: url("../imgs/background.jpg");
+  background-size: cover;
+}
+
+/*opacidad */
+body::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: -1;
+}
+
+/*Footer*/
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height:auto;
+  background-color: #1D3C5E;
+  text-align: center;
+  display:block;
+  padding:10px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Josefin Sans';
+  font-weight: bold;
+  
+  
+}
+/*container registro*/
+
+.containerRegistro{
+  background-color: #1D3C5E;
+}
