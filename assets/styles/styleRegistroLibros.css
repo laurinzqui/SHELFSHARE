@@ -3,8 +3,6 @@ body {
     background-size: cover;
 }
 
-
-
 /* Este codigo genera una capa de opacidad sobre nuestro background para que sea mas visible nuestro titulo de formulario */
 body::before {
     content: "";
@@ -15,7 +13,17 @@ body::before {
     z-index: -1;
 }
 
+/* Para darle su color azul a la caja de formulario */
+.card {
+    background-color: #1D3C5E;
+    color: white;
+}
 
+/* Para cambiarle el color al boton */
+.custom-button {
+    background-color: #4A4646;
+    color: white;
+}
 
 /* Esta es nuestra clase de nuestro titulo de formulario "Registro de libros" */
 .text-white {

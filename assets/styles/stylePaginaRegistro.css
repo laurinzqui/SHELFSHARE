@@ -13,8 +13,21 @@ body::before{
     z-index: -1;
 }
 
-h3 {
+/* Para darle su color azul a la caja de formulario */
+.card {
+    background-color: #1D3C5E;
+    color: white;
+}
+
+/* Esta es nuestra clase de nuestro titulo de formulario "Registro" */
+.text-white {
     text-align: center;
+}
+
+/* Para cambiarle el color al boton */
+.custom-button {
+    background-color: #4A4646;
+    color: white;
 }
 
 footer {
