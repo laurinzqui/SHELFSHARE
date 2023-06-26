@@ -1,6 +1,4 @@
 // Aqui ira el JS para paginaRegistro
-
-
 //definicion de variables
 
 var formUsuario = document.getElementById("userName");
@@ -9,13 +7,9 @@ var formNumero = document.getElementById("phoneNumber");
 var formNacimiento = document.getElementById("birthdayDate")
 var botonRegistro = document.getElementById("botonRegistro")
 var checkboxTerminos = document.getElementById("checkTerminos")
-
 var password = document.getElementById("password");
 var confirmPassword = document.getElementById("confirmPassword");
-
 var alertDiv = document.getElementById("alertDiv");
-
-
 
 function registrarUsuario(){
     var divContent= ` `;
