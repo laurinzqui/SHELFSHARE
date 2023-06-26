@@ -1,9 +1,16 @@
 /*Cuerpo de toda la pagina y fondo*/
-body{
-    background-color: rgb(198, 198, 234);
-    background-image: url("../imgs/background.jpg");
-    padding-bottom: 40px;
-    
+body {
+  background-image: url("../imgs/background.jpg");
+  background-size: cover;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* el modificar este ultimo valor de rgba modifica la opacidad */
+  z-index: -1;
 }
 
 

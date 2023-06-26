@@ -1,0 +1,157 @@
+/* Estilo de fondo de la página */
+body {
+  background-color: #0D1925;
+}
+
+/* Estilo Fila primaria */
+.containerPerfil {
+  width: 98%;
+  
+    background-color:#1D3C5E;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-radius: 52px;
+    font-family: 'Josefin Sans';
+    text-align: center;
+    
+
+}
+::placeholder{
+  background-color: #1D3C5E;
+  font-size: 24px;color: aliceblue;
+
+}
+
+.imageContainer {
+  display: block;
+    justify-content: justify;
+    align-items: center;
+    max-width: 100%;
+    height:auto;
+    overflow: hidden;
+    padding: 20px;
+    margin: auto;
+}
+.imageContainer img{
+    
+  height:auto;
+  display:block;
+  object-position: center;
+  max-height:60%;
+  max-width: 60%;
+  margin: auto;
+}
+
+
+/* Texto de contenedor perfil*/
+.imageTextContainer{
+  width:100%;
+  padding: 15%;
+
+}
+.imageTextContainer p{
+  max-height:100%;
+  max-width:100%;
+  font-size: 24px;
+
+}
+
+/* Boton */
+button{
+  float: left;
+}
+
+/* Estilo Fila secundaria */
+.contenidoBiblioteca {
+  background-color: #1D3C5E;
+  border-radius: 20px;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  
+  margin-bottom: 30%;
+  padding: 45px;
+
+}
+
+#containerTarjetas {
+  text-align: center;
+  /* Centra horizontalmente el contenido */
+}
+
+
+.card {
+  max-width: 100%;
+ 
+  
+}
+
+@media (min-width: 410px) {
+  .card {
+    max-width: 40%;
+  }
+
+}
+
+
+
+
+.contenidoReseña {
+  background-color: #1D3C5E;
+  border-radius: 20px;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30%;
+  padding: 45px;
+}
+
+/*Estilo para letras */
+p {
+  font-family: 'Josefin Sans';
+  color: aliceblue;
+}
+
+h1 {
+  font-family: 'Josefin Sans';
+  color: aliceblue;
+  text-align: center;
+}
+
+span{
+  font-family: 'Josefin Sans';
+  color: aliceblue;
+  text-align: justify;
+  font-size:32px ;
+}
+
+
+
+
+
+
+
+
+/* Estilo de pie de página*/
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  background-color: #1D3C5E;
+  text-align: center;
+  display: block;
+  padding: 10px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Josefin Sans';
+  font-weight: bold;
+
+
+}
