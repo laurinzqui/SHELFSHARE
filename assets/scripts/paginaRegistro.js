@@ -67,7 +67,7 @@ function registrarUsuario(){
     }
 
 
-    else if ((!password.value || password !== confirmPassword) && password.value.length < 6) {
+    else if ((!password.value || password.value !== confirmPassword.value) && password.value.length < 6) {
       divContent = `
         <div class="alert alert-warning fixed-top" role="alert">
         <strong>Contraseña invalida</strong> Completa el campo correctamente y verifque que sean iguales.
@@ -78,7 +78,7 @@ function registrarUsuario(){
       `;
     }
 
-    else if(!checkboxTerminos.value){
+    else if(!checkboxTerminos.checked){
       divContent = `
       <div class="alert alert-warning fixed-top" role="alert">
       <strong>T&C No aceptado</strong> Lea con atencion los Terminos y condiciones.
@@ -96,7 +96,7 @@ function registrarUsuario(){
     else{
         divContent = `
         <div class="alert alert-success fixed-top" role="alert">
-        <strong>Libro ingresado</strong>
+        <strong>Cuenta registrada</strong>
 
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
        
