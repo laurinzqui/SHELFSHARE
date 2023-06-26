@@ -4,7 +4,7 @@ header {
     padding: 10px;
 }
 
-nav ul {
+/* nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -18,7 +18,7 @@ nav ul li {
 nav ul li a {
     color: #fff;
     text-decoration: none;
-}
+} */
 
 body {
     margin: 0;
@@ -103,7 +103,7 @@ background-color: #2e2a611e;
 
 /* Estilo navbar */
 
-.navbar-light {
+/* .navbar-light {
     background-color: #1D3C5E;
     font-family: 'Josefin Sans', sans-serif;
 }
@@ -130,7 +130,7 @@ background-color: #2e2a611e;
 .imagenPrincipal {
     margin-left: 20px;
     height: 500px;
-}
+} */
 
 /* Estilo búsqueda */
 .container {
@@ -188,7 +188,7 @@ background-color: #2e2a611e;
 
 }
 
-.navbar-light {
+/* .navbar-light {
     background-color: #1D3C5E;
     font-family: 'Josefin Sans', sans-serif;
 }
@@ -198,7 +198,7 @@ background-color: #2e2a611e;
     color: #EBE4CF;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 600;
-}
+} */
 
 
 .footer {
