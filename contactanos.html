@@ -55,65 +55,66 @@
 
   <!--Formulario-->
   <div class="containerGeneral">
+    <div id="alertDiv"></div> <!--div para las alertas de validacion de datos-->
     <div class="row">
       <div class="containerFormulario col-sm-12 col-md-4 col-lg-6">
-
+  
         <div class="col-sm-12 col-md-12 col-lg-12">
           <h2>Formulario de contacto</h2>
           <form>
-
+  
             <div class="form-floating mb-3">
               <br><br>
-              <input type="text" class="form-control" id="floatingInput" placeholder="Nombre (s)">
-              <label for="floatingInput"> Nombre (s)</label>
+              <input type="text" class="form-control" id="userNames" placeholder="Nombre (s)">
+              <label for="userNames"> Nombre (s)</label>
             </div>
-
-
+  
+  
             <div class="form-floating mb-3">
               <br><br>
-              <input type="text" class="form-control" id="floatingPassword" placeholder="Password">
-              <label for="floatingPassword">Apellidos</label>
+              <input type="text" class="form-control" id="userSurnames" placeholder="Apellidos">
+              <label for="userSurnames">Apellidos</label>
             </div>
-
-
+  
+  
             <div class="form-floating mb-3">
               <br><br>
-              <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-              <label for="floatingInput">Email address</label>
+              <input type="email" class="form-control" id="userEmail" placeholder="name@example.com">
+              <label for="userEmail">Correo Electrónico</label>
             </div>
-
-
+  
+  
             <div class="form-floating mb-3">
               <br><br>
-              <input type="text" class="form-control" id="floatingPassword" placeholder="Asunto">
-              <label for="floatingPassword">Asunto</label>
+              <input type="text" class="form-control" id="userAsunto" placeholder="Asunto">
+              <label for="userAsunto">Asunto</label>
             </div>
-
+  
             <div class="form-floating mb-3">
               <br><br>
-              <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+              <textarea class="form-control" placeholder="Leave a comment here" id="userMensaje"
                 style="height: 100px"></textarea>
-              <label for="floatingTextarea2">Mensaje</label>
+              <label for="userMensaje">Mensaje</label>
             </div>
-
-
+  
+  
             <div class="d-grid gap-2">
-
-              <button class="btn btn-primary" type="button">Enviar</button>
+  
+              <button class="btn btn-primary" type="button" id="botonEnviar">Enviar</button>
             </div>
           </form>
         </div>
       </div>
-
-<!-- Terminos y condiciones-->
+  
+      <!-- Terminos y condiciones-->
       <div class="containerTerminos col-sm-12 col-md-8 col-lg-6">
         <div class="col-sm-12 col-md-12 col-lg-12">
           <div class="imageContainer" id="firstImageSlide">
             <img src="./assets/imgs/logo.png" class="rounded " alt="...">
           </div>
           <div class="contenido">
-            <h2>Terminos y condiciones</h2>
-            <p><a href="/terminosYCondiciones.html" target="_blank">Click aqui para leer los terminos y condiciones.</a>
+            <h2>Términos y condiciones</h2>
+            <p><a href="/terminosYCondiciones.html" target="_blank">Click aqui para leer los términos y condiciones.</a>
             </p>
           </div>
         </div>
@@ -142,6 +143,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
     crossorigin="anonymous"></script>
+  <script src="./assets/scripts/contactanos.js"></script>
 </body>
 
 </html>
