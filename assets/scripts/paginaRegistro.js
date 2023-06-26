@@ -102,7 +102,7 @@ function registrarUsuario(){
        
       </div>`;
 
-      //se crea el libro
+      //se crea el usuario
 
       var Usuario = {
         Nombre: formUsuario.value,
