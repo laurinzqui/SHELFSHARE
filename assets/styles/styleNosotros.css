@@ -37,7 +37,7 @@ body::before {
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0;
+  bottom: -10%;
   background-color: rgba(0, 0, 0, 0.5); /* el modificar este ultimo valor de rgba modifica la opacidad */
   z-index: -1;
 }
@@ -91,7 +91,7 @@ body::before {
 
 .imageTextContainer {
   width: 100%;
-  padding: 15%;
+  padding: 6%;
 }
 
 .imageTextContainer p {
@@ -114,6 +114,7 @@ footer {
   text-align: center;
   display: block;
   padding: 10px;
+  z-index: 2;
 }
 
 .footer a {
@@ -149,4 +150,13 @@ footer {
     font-size: small
   }
 
+}
+
+p{
+  font-size: large;
+  font-weight:bolder;
+}
+.nameDeveloper p {
+  margin-top: 2%;
+  font-size: larger;
 }
