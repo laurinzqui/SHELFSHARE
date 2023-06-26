@@ -63,17 +63,19 @@
           <!-- Titulo de formulario, el "mb-4" le esta dando un margin debajo de nuestro texto-->
 
           <div class="card" style="border-radius: 15px;"> <!-- Rectangulo blanco completo de nuestro formulario -->
+            <div id="alertDiv"></div> <!-- div para los alerts-->
+            
             <div class="card-body">
 
               <div class="row align-items-center pt-4 pb-3"> <!-- Seccion Nombre de formulario -->
                 <div class="col-md-3 ps-5">
 
-                  <h6 class="mb-0">Nombre</h6>
+                  <h6 class="mb-0">Titulo</h6>
 
                 </div>
                 <div class="col-md-9 pe-5">
 
-                  <input type="text" class="form-control form-control-lg" />
+                  <input type="text" class="form-control form-control-lg" id="formTitle"/>
 
                 </div>
 
@@ -89,7 +91,7 @@
                 </div>
                 <div class="col-md-9 pe-5">
 
-                  <input type="text" class="form-control form-control-lg" />
+                  <input type="text" class="form-control form-control-lg" id="formAutor"/>
 
                 </div>
 
@@ -105,7 +107,7 @@
                 </div>
                 <div class="col-md-9 pe-5">
 
-                  <input type="date" class="form-control form-control-lg" />
+                  <input type="date" class="form-control form-control-lg" id="formDate"/>
 
                 </div>
               </div>
@@ -120,7 +122,7 @@
                 </div>
                 <div class="col-md-9 pe-5">
 
-                  <textarea class="form-control" rows="3" placeholder="Agrega sinopsis"></textarea>
+                  <textarea class="form-control" rows="3" id="formSnps" placeholder="Agrega sinopsis"></textarea>
 
                 </div>
               </div>
@@ -133,7 +135,7 @@
                   <h6 class="mb-0">PDF</h6>
                 </div>
                 <div class="col-md-9 pe-5">
-                  <input class="form-control form-control-lg" id="formFileLg" type="file" />
+                  <input class="form-control form-control-lg" id="formFile" accept="application/pdf" type="file" />
                   <div class="small mt-2">Agrega PDF del libro</div>
                 </div>
               </div>
@@ -146,7 +148,7 @@
                   <h6 class="mb-0">Portada de Libro</h6>
                 </div>
                 <div class="col-md-9 pe-5">
-                  <input class="form-control form-control-lg" id="formFileLg" type="file" />
+                  <input class="form-control form-control-lg" id="formImg" accept="image/*"  type="file" />
                   <div class="small mt-2">Agrega Portada del libro</div>
                 </div>
               </div>
@@ -154,7 +156,7 @@
               <hr class="mx-n3"> <!-- Linea horizontal gris que hace separaciones en formulario -->
 
               <div class="px-5 py-4" style="display: flex; justify-content: center;">
-                <button type="submit" class="btn custom-button btn-lg">Registra libro</button>
+                <button type="submit" class="btn custom-button btn-lg" id="botonRegistro">Registra libro</button>
               </div>
 
             </div>

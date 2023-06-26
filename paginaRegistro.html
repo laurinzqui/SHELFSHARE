@@ -61,15 +61,19 @@
             <h1 class="text-white mb-4">Registro</h1>
             <div class="card shadow-2-strong card-registration" style="border-radius: 15px;">
               <div class="card-body p-4 p-md-5">
+
+                <div id="alertDiv"></div> <!-- div para los alerts-->
                 <!-- <h3 class="mb-4 pb-2 pb-md-0 mb-md-5">Registro</h3> --> <!-- ESTA LINEA METE EL TEXTO REGISTRO DENTRO DE LA CAJITA AZUL -->
-                <form>
+                
 
                   <div class="row">
+
+                    
                     <div class="col-md-6 mb-4">
 
                       <div class="form-outline"> <!-- Seccion NOMBRE de formulario-->
-                        <input type="text" id="firstName" class="form-control form-control-lg" />
-                        <label class="form-label" for="firstName">Nombre Completo</label>
+                        <input type="text" id="userName" class="form-control form-control-lg" />
+                        <label class="form-label" for="userName">Nombre</label>
                       </div>
 
                     </div>
@@ -125,8 +129,8 @@
                     <div class="col-12">
 
                       <div class="form-check d-flex justify-content-center mb-5"> <!-- Seccion TERMINOS Y CONDICIONES de formulario-->
-                        <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3c" />
-                        <label class="form-check-label" for="form2Example3">
+                        <input class="form-check-input me-2" type="checkbox" value="" id="checkTerminos" />
+                        <label class="form-check-label" for="checkTerminos">
                           Acepto los <a href="./terminosYCondiciones.html" target="_blank"> terminos y condiciones</a>
                         </label>
                       </div>
@@ -135,10 +139,10 @@
 
                   <div class="mt-4 pt-2" style="display: flex; justify-content: center;"> <!-- Seccion BOTON SUBMIT de formulario-->
                     <!-- <input class="btn btn-primary btn-lg" type="submit" value="Registrarse" /> -->
-                    <button class="btn custom-button btn-lg" type="submit" value="Registrarse" onclick="validatePassword()">Registrarse</button>
+                    <button class="btn custom-button btn-lg" id="botonRegistro">Registrarse</button>
                   </div>
 
-                </form>
+                
               </div>
             </div>
           </div>
