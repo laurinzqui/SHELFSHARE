@@ -53,6 +53,9 @@ function insertarLibro (libro){
     img.src = libro.portada;
     img.className = "card-img-top";
     img.alt = libro.titulo;
+    img.addEventListener("click", function(){
+        window.location.href="../publicaciones.html"
+    })
 
     var divCardBody = document.createElement("div");
     divCardBody.className = "card-body";

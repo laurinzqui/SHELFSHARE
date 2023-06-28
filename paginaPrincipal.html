@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHELFSHARE</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./assets/styles/stylePaginaPrincipal.css">
+    <link rel="stylesheet" href="./assets/styles/styleNavBar.css">
+    <link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
+</head>
+
+<body>
+
+
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" style="pointer-events: none; color: white !important;">SHELFSHARE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a href="paginaPrincipal.html" class="nav-link" id="homeText">
+                            INICIO
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="perfil.html" class="nav-link" id="perfilText">
+                            PERFIL
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="./bookLibrary.html" class="nav-link" id="notificacionesText">BIBLIOTECA</a>
+                    </li>
+                    <!-- <li class="nav-item active">
+                        <a href="#" class="nav-link" id="notificacionesText">NOTIFICACIONES</a>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="containerGeneral">
+
+        <!--here we are, again in this section we define a mini carousel novedades-->
+        <div class="containerCarouselPaginaPrincipal">
+            <div class="container text-center">
+                <div class="containerTextHeader">
+                    <h4>Novedades</h4>
+                </div>
+                <div class="row mx-auto my-auto justify-content-center">
+                    <div id="carousel1" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active">
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <div class="card-img"> <img src="./assets/imgs/coverPrincipito.png"
+                                                class="img-fluid"> </div>
+                                        <div class="card-img-overlay">Slide 1</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <div class="card-img"> <img src="./assets/imgs/coverDiezNochesSuenios.png"
+                                                class="img-fluid"> </div>
+                                        <div class="card-img-overlay">Slide 2</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <div class="card-img"> <img src="./assets/imgs/coverIslaTesoro.png"
+                                                class="img-fluid"> </div>
+                                        <div class="card-img-overlay">Slide 3</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <div class="card-img"> <img src="./assets/imgs/coverLibroJapanese.png"
+                                                class="img-fluid">
+                                        </div>
+                                        <div class="card-img-overlay">Slide 4</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <div class="card-img"> <img src="./assets/imgs/coverMobyDick.png"
+                                                class="img-fluid"> </div>
+                                        <div class="card-img-overlay">Slide 5</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <div class="card-img"> <img src="./assets/imgs/coverUlises.png"
+                                                class="img-fluid"> </div>
+                                        <div class="card-img-overlay">Slide 6</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <a class="carousel-control-prev bg-transparent w-aut" href="#carousel1" role="button"
+                            data-bs-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </a> <a class="carousel-control-next bg-transparent w-aut" href="#carousel1" role="button"
+                            data-bs-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!--Seguir Leyendo-->
+
+        <div class="containerCarouselBiblioteca">
+            <div class="container text-center">
+                <div class="containerTextHeader">
+                    <h4>Seguir Leyendo</h4>
+                </div>
+                <div class="row mx-auto my-auto justify-content-center">
+                    <div id="carousel2" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active">
+                                <div class="col-md-3">
+                                    <div class=""> <img src="./assets/imgs/cover1984.png" class="img"> </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-3">
+
+                                    <div class=""> <img src="./assets/imgs/coverOdisea.png" class="img"> </div>
+
+
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-3">
+
+                                    <div class=""> <img src="./assets/imgs/coverUlises.png" class="img"> </div>
+
+
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-3">
+
+                                    <div class=""> <img src="./assets/imgs/coverDiezNochesSuenios.png" class="img">
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-3">
+
+                                    <div class=""> <img src="./assets/imgs/coverIslaTesoro.png" class="img"> </div>
+
+
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-3">
+
+                                    <div class=""> <img src="./assets/imgs/coverMobyDick.png" class="img"> </div>
+
+
+                                </div>
+                            </div>
+                        </div> <a class="carousel-control-prev bg-transparent w-aut" href="#carousel2" role="button"
+                            data-bs-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </a> <a class="carousel-control-next bg-transparent w-aut" href="#carousel2" role="button"
+                            data-bs-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+        <!--definimos la seccion de la actividad reciente-->
+        <div class="containerActividadReciente">
+            <div class="container text-center">
+                <div class="containerTextHeader">
+                    <h4>Actividad Reciente</h4>
+                </div>
+
+                <div class="containerBoxesActividadReciente">
+
+                    <!--cada box se crea para cada elemento de actividad reciente, esta es una muestra-->
+                    <div class="box">
+                        <div class="row">
+                            <div class="col-sm-3 col-md-3 col-lg-3">
+                                <img src="./assets/imgs/Angel.jpg" class="img-fluid redondearImgBox controlSize">
+                            </div>
+
+                            <div class="col-sm-9 col-md-9 col-lg-9">
+                                <p>@USERNAME action en [nombreLibro] </p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, aut?
+                                    Accusantium, nulla veniam blanditiis cum eligendi aperiam eos provident similique
+                                    illo perferendis quas, iste dolores aut, excepturi laudantium nostrum asperiores!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="row">
+                            <div class="col-sm-3 col-md-3 col-lg-3">
+                                <img src="./assets/imgs/principitoLanding.png"
+                                    class="img-fluid redondearImgBox controlSize">
+                            </div>
+
+                            <div class="col-sm-9 col-md-9 col-lg-9">
+                                <p>@USERNAME action en [nombreLibro] </p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, aut?
+                                    Accusantium, nulla veniam blanditiis cum eligendi aperiam eos provident similique
+                                    illo perferendis quas, iste dolores aut, excepturi laudantium nostrum asperiores!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </div><!--cierre del div general (carousels & actividad reciente)-->
+
+
+
+    <script src="./assets/scripts/carouselPaginaPrincipal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
