@@ -19,12 +19,12 @@ body {
 
 .imagenPrincipal {
   margin-left: 20px;
-  height: 500px;
+  
 }
 
 /* Estilo búsqueda */
 .container {
-  margin-top: 20px;
+  margin-top: 50px;
 }
 
 .form-control.me-2 {
