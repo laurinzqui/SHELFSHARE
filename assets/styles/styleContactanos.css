@@ -16,7 +16,7 @@ body::before {
 
 /* Parte de body, formulario*/
 h2{
-    font-size: 24px;color: antiquewhite;
+    font-size: 32px;color: antiquewhite;
     text-align: center;
     margin-block: 25px;
 }
@@ -27,7 +27,7 @@ h2{
    padding-inline-start: 35px;
    padding-inline-end: 35px;
 
-   margin-top: 2%;
+   margin-top: 5%;
 
 
    
@@ -89,6 +89,7 @@ p{
     font-family: 'Josefin Sans';
     font-weight: bold;
     color: white;
+    font-size: 24px;
 }
 
 
@@ -110,6 +111,7 @@ footer{
   color: white;
   font-family: 'Josefin Sans';
   font-weight: bold;
+  font-size: 24px;
   
   
 }
