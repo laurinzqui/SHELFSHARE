@@ -1,0 +1,194 @@
+body {
+  background-color: rgba(4, 68, 136, 0.9);
+  color: white;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+/* PARA QUE NO CUBRA LA NAVBAR ARRIBA */
+.container {
+  margin-top: 5%;
+}
+#NewComment{
+  background-color: #236ebd;
+}
+
+/* PARA QUE EL CUADRO/BORDE DE PORTADA E INFO SEA MAS GRANDE */
+.row {
+  padding: 5%;
+  border-color: rgba(29, 60, 94, 1);
+  background-color: #2461a2;
+}
+
+/* COLOR DE BACKGROUND DE COMENTARIOS */
+.card-footer {
+  background-color: rgba(235, 228, 207, .90);
+}
+
+/* PARA QUE QUEDEN SEPARADOS LOS COMENTARIOS */
+.container-flex {
+  margin-top: 3%;
+}
+
+/* TITULOS DE NOMBRE DE USUARIO */
+h3{
+  color: black;
+}
+
+/* PARA QUE LOS BOTONES TENGAN ESPACIO */
+button {
+  margin: .25%
+}
+
+
+
+
+
+
+
+
+/* CSS DE COMENTARIOS */
+.comment {
+  
+  padding-left: 100px;
+  margin-bottom: 10px;
+}
+
+.reply {
+  
+  padding: 10px;
+  border-radius: 20px;
+  margin-top: 10px;
+  background-color: #244a73;
+}
+
+.comment-header {
+  
+  align-items: center;
+  margin-bottom: 5px;
+  margin-left: 5%;
+  margin-top: 20px;
+}
+
+
+.reply-header{
+
+  align-items: center;
+  margin-bottom: 5px;
+  margin-left: 5%;
+  margin-top: 20px;
+
+}
+
+.profile-photo,
+.reply-author {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.comment-author,
+.reply-author {
+  margin: 0;
+  font-size: 16px;
+}
+
+.comment-time,
+.reply-time {
+  margin: 0;
+  font-size: 12px;
+  color: #777;
+}
+
+.comment-content,
+.reply-content {
+  margin-left: 40px;
+}
+
+.reply-btn {
+  background: none;
+  border: none;
+  color: #428bca;
+  cursor: pointer;
+  font-size: 12px;
+  margin-top: 5px;
+  padding: 0;
+}
+
+.thread-input {
+  margin-left: 40px;
+}
+
+.form-control {
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.btn-outline-primary {
+  color: #428bca;
+  border-color: #428bca;
+}
+/* CSS DE COMENTARIOS */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CSS PARA QUE EL PRIMER COMENTARIO TENGA ESTILO */
+.comment {
+  background-color: #1D3C5E;
+  padding: 10px;
+  margin-bottom: 10px;
+  color: white;
+  border-radius: 20px;
+
+}
+
+.commentInsert-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  margin-top: 20px;
+}
+
+
+#commentForm{
+  margin-left: 100px;
+  
+  padding-bottom: 10px;
+}
+
+.profile-photo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.comment-photo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 10px;
+  margin-bottom: 0px;
+}
+
+.comment-author {
+  margin: 0;
+}
+
+.comment-content {
+  margin-left: 100px;
+
+}
+/* CSS PARA QUE EL PRIMER COMENTARIO TENGA ESTILO */
