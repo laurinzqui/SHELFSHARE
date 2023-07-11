@@ -1,21 +1,26 @@
 /* Estilo de fondo de la página */
 body {
   background-color: #0D1925;
+  background: linear-gradient(45deg, rgb(9, 62, 119), rgb(9, 2, 38));
 }
 
 /* Estilo Fila primaria */
 .containerPerfil {
-  width: 98%;
+  width: 90%;
+ 
   
     background-color:#1D3C5E;
+   
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 5%;
+    margin-top: 10%;
     margin-bottom: 5%;
     border-radius: 52px;
     font-family: 'Josefin Sans';
     text-align: center;
+    border-block: 5px solid;color:#061c32(1, 8, 36);
+   
     
 
 }
@@ -33,7 +38,7 @@ body {
     height:auto;
     overflow: hidden;
     padding: 20px;
-    margin: auto;
+    margin:10%;
 }
 .imageContainer img{
     
@@ -43,8 +48,17 @@ body {
   max-height:60%;
   max-width: 60%;
   margin: auto;
+  
 }
 
+/*Boton camara*/
+#botonImagen{
+  border-radius: 2%;
+  font-size: 16px;
+  color: rgb(1, 1, 18);
+  padding: 5px;
+   float: left;
+}
 
 /* Texto de contenedor perfil*/
 .imageTextContainer{
@@ -52,21 +66,13 @@ body {
   padding: 15%;
 
 }
-.imageTextContainer p{
-  max-height:100%;
-  max-width:100%;
-  font-size: 24px;
 
-}
 
-/* Boton */
-button{
-  float: left;
-}
 
 /* Estilo Fila secundaria */
 .contenidoBiblioteca {
   background-color: #1D3C5E;
+  
   border-radius: 20px;
   width: 70%;
   margin-left: auto;
@@ -74,6 +80,8 @@ button{
   
   margin-bottom: 30%;
   padding: 45px;
+  border-block: 5px solid;color:#061c32(1, 8, 36);
+
 
 }
 
@@ -107,6 +115,8 @@ button{
   margin-right: auto;
   margin-bottom: 30%;
   padding: 45px;
+  border-block: 5px solid;color:#061c32(1, 8, 36);
+  
 }
 
 /*Estilo para letras */
@@ -117,8 +127,11 @@ p {
 
 h1 {
   font-family: 'Josefin Sans';
-  color: aliceblue;
-  text-align: center;
+    font-size:50px ;
+    color: aliceblue;
+    text-align: center;
+    text-shadow: 5px 5px 10px #97bdde;
+  
 }
 
 span{
@@ -135,7 +148,7 @@ span{
 
 
 
-/* Estilo de pie de página*/
+/* Estilo de pie de página
 footer {
   position: fixed;
   bottom: 0;
@@ -154,12 +167,7 @@ footer {
   font-weight: bold;
 
 
-}
-
-
-
-
-
+}*/
 
 .card-img-container {
   display: flex;
@@ -167,43 +175,46 @@ footer {
 }
 
 
-
-
-
-
-
-
-
+/*Boton para colapsar*/
 .collapsible {
-  background-color: #777;
-  color: white;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
+  background-color: #244b75;
+  color: rgb(177, 198, 224);
+  padding: 5px;
+  width: 40%;
+  text-align: center;
   outline: none;
-  font-size: 15px;
+  float: right;
+  
+}
+/*Icono de lápiz*/
+i{
+  font-size: 24px;
 }
 
 .collapsible:after {
   content: '\002B';
-  color: white;
+  color: rgb(0, 0, 0);
   font-weight: bold;
   float: right;
   margin-left: 5px;
+  
 }
+
 
 .active:after {
   content: "\2212";
 }
 
+/* Tabla editar*/
 .content {
-  padding: 0 18px;
+  padding: 0 30px;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
-  background-color: #f1f1f1;
+  background-color:#f3f8fa;
+  border-radius: 5%;
+
+  
 }
 
 .profile-info {
