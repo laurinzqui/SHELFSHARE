@@ -1,5 +1,5 @@
 body {
-  background-color: rgba(29, 60, 94, .9);
+  background-color: rgba(4, 68, 136, 0.9);
   color: white;
   font-family: 'Josefin Sans', sans-serif;
 }
@@ -8,11 +8,15 @@ body {
 .container {
   margin-top: 5%;
 }
+#NewComment{
+  background-color: #236ebd;
+}
 
 /* PARA QUE EL CUADRO/BORDE DE PORTADA E INFO SEA MAS GRANDE */
-.border {
+.row {
   padding: 5%;
   border-color: rgba(29, 60, 94, 1);
+  background-color: #2461a2;
 }
 
 /* COLOR DE BACKGROUND DE COMENTARIOS */
@@ -44,21 +48,34 @@ button {
 
 /* CSS DE COMENTARIOS */
 .comment {
-  border: 1px solid #ccc;
-  padding: 10px;
+  padding-left: 100px;
   margin-bottom: 10px;
 }
 
 .reply {
-  border: 1px solid #eee;
+  
   padding: 10px;
+  border-radius: 20px;
   margin-top: 10px;
+  background-color: #244a73;
 }
 
 .comment-header {
-  display: flex;
+  
   align-items: center;
   margin-bottom: 5px;
+  margin-left: 5%;
+  margin-top: 20px;
+}
+
+
+.reply-header{
+
+  align-items: center;
+  margin-bottom: 5px;
+  margin-left: 5%;
+  margin-top: 20px;
+
 }
 
 .profile-photo,
@@ -136,10 +153,11 @@ button {
 
 }
 
-.comment-header {
+.commentInsert-header {
   display: flex;
   align-items: center;
   margin-bottom: 5px;
+  margin-top: 20px;
 }
 
 
