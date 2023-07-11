@@ -19,6 +19,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
         integrity="sha512-XAqLlGSrURDvHfvjqg0dpJN57mqI9XjdZ+yBVc0tmrhBwnzF7bu9/1yfObBInTJztar+mDsJszIgKtBrf2Fubg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Enlace de iconos-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
+
 
 
 
@@ -68,6 +72,7 @@
                 <div class="col-sm-12 col-md-12 col-lg-6 ">
                     <div class="perfilusuarios">
                         <!-- usar h1/h2 para algun titulo-->
+                       
                     </div>
                 </div>
 
@@ -82,7 +87,7 @@
                     <div class="imageContainer" id="firstImageSlide">
 
                         <img id="imagen" src="assets/imgs/Rafael.jpg" alt="Imagen de perfil" class="rounded-circle">
-                        <button onclick="cambiarImagen()">Cambiar Imagen</button>
+                        <button onclick="cambiarImagen()" id="botonImagen">  <i class="fas fa-camera fa-lg"></i></button>
 
                     </div>
 
@@ -111,7 +116,7 @@
                             </span>
                         </div>
 
-                        <button type="button" class="collapsible">Editar</button>
+                        <button type="button" class="collapsible">  <i class="fas fa-pencil-alt">Editar perfil</i></button>
                         <div class="content">
                             <form id="editForm">
                                 <div class="form-group">
