@@ -43,7 +43,7 @@ function loginUsuario(username, password) {
         }else if(json.contrasena == password){
            console.log("credenciales correctas")
           //HTTP redirect:
-          window.location.replace("../paginaPrincipal.html");
+          window.location.replace("./paginaPrincipal.html");
 
 
         }else{
