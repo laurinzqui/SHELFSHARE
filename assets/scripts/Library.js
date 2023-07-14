@@ -12,7 +12,7 @@ class libro {
 var arrayLibros = [];
 
 //lista de libros
-arrayLibros.push(new libro("El Principito", "Antoine de Saint-Exupéry y Kan Nozaki", "https://upload.wikimedia.org/wikipedia/commons/1/1c/El_principito.jpg", "Fecha de Publicación"))
+arrayLibros.push(new libro("El Principito", "Antoine de Saint-Exupéry y Kan Nozaki", "https://upload.wikimedia.org/wikipedia/commons/1/1c/El_principito.jpg", "1943"))
 
 arrayLibros.push(new libro("Harry Potter y el prisionero de Azkaban ", "J.k. Rowling", "./assets/imgs/harryPotter.jpg", "1999"))
 
@@ -54,7 +54,7 @@ function insertarLibro (libro){
     img.className = "card-img-top";
     img.alt = libro.titulo;
     img.addEventListener("click", function(){
-        window.location.href="../publicaciones.html"
+        window.location.href="./publicaciones.html"
     })
 
     var divCardBody = document.createElement("div");
