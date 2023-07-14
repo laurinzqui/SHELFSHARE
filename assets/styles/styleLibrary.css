@@ -1,34 +1,63 @@
+/*Letra biblioteca*/
+h1{
+  font-size:50px ;
+  color: aliceblue;
+  text-align: center;
+  text-shadow: 5px 5px 10px #97bdde;
+}
+
+/* Input buscar libros*/
+.d-flex{
+  margin-top: 30px;
+  border-radius:15% 0px 00px 15% ;
+}
+
+/* container uno */
+.container {
+  margin-top: 5%;
+  border: 1px solid rgb(40, 89, 115);
+  padding: 2%;
+  background-color: #0b253e;
+  border-radius: 15px;
+  backdrop-filter: blur(10px); 
+  -webkit-backdrop-filter: blur(10px);
+}
+
+#containerTarjetas{
+padding-top: 4%;
+
+}
+
+/* Estilo cuerpo fondo*/
+body {
+background-image:url(../imgs/123.jpg);
+background-color: #0b253e;
+background-size: cover;
+  
+}
+
+
 /* Estilo de las tarjetas */
 .card {
   max-width: 100%;
+  border: 1px solid #ecf2f3;
+  box-shadow: 0 2px 4px rgba(135, 142, 127, 0.1);
+  margin: 20px auto;
+  padding: 20px;
+  
 }
 
+/*tamaÃ±o cartas*/
 @media (min-width: 410px) {
   .card {
-    max-width: 50%;
+    max-width: 60%;
+ 
   }
 
 }
 
-/* Estilo cuerpo */
-
-body {
-  background-color: #0D1925;
-  padding-bottom: 40px;
-}
-
 .imagenPrincipal {
-  margin-left: 20px;
-  
+  margin-left: 100px;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(174, 54, 54, 0.2);
 }
-
-/* Estilo búsqueda */
-.container {
-  margin-top: 50px;
-}
-
-.form-control.me-2 {
-  padding: 5px;
-}
-
-

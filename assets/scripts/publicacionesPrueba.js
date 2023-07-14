@@ -4,7 +4,6 @@ function postComment() {
   
     const previousComments = document.getElementById('previousComments');
   
-    // Create a new comment element
     const newComment = document.createElement('div');
     newComment.classList.add('comment');
   
@@ -52,17 +51,14 @@ function postComment() {
     newComment.appendChild(commentHeader);
     newComment.appendChild(commentContent);
   
-    // Insert the new comment below the comment input section
     previousComments.insertBefore(newComment, previousComments.firstChild);
   
-    // Clear the comment input
     document.getElementById('floatingTextarea').value = '';
   }
   
   function startThread(replyButton) {
     const commentContent = replyButton.parentNode.parentNode;
   
-    // Check if a thread input already exists
     if (commentContent.querySelector('.thread-input')) {
       return;
     }
@@ -174,6 +170,5 @@ function postComment() {
   
     commentContent.appendChild(replyElement);
   
-    // Remove the thread input
     commentContent.removeChild(threadInput);
   }

@@ -27,6 +27,7 @@
 
 .containerCarouselPaginaPrincipal{
     margin-top: 5%;
+    background: linear-gradient(to top, #09203f 0%, #537895 100%);
 }
 /*espaciado entre las cards*/
 
@@ -42,13 +43,18 @@
 
 /*Estilos del body y del container general(carousels & actividad reciente)*/
 body{
-    background-color:#0D1925 ;
+    /* background-color:#0D1925 ; */
+    /* background: linear-gradient(65.5deg, rgb(23, 205, 205) -15.1%, rgb(23, 25, 95) 71.5%); */
+    /* background: linear-gradient(to top, #09203f 0%, #537895 100%); */
+    background-image: url("../imgs/123.jpg");
+    background-size: cover;
 }
 
 .containerGeneral{
     font-family: 'Josefin Sans';
-    font-weight: bold;
+    /* font-weight: bold; */
     color: white;
+    
 }
 
 
@@ -56,16 +62,18 @@ body{
 /* estilos del container del carousel de las novedades*/
 .containerCarouselPaginaPrincipal{
     margin-top:10%;
-    background-color: #1D3C5E;
+    /* background-color: #1D3C5E; */
     padding: 2%;
+    background: linear-gradient(to top, #09203f 0%, #537895 100%);
 }
 
 /*estilos container del carousel de la biblioteca*/
 .containerCarouselBiblioteca{
     margin:5%;
-    background-color: #1D3C5E;
+    /* background-color: #1D3C5E; */
     padding: 2%;
     border-radius: 21px;
+    background: linear-gradient(to top, #09203f 0%, #537895 100%);
 }
 
 
@@ -73,6 +81,7 @@ body{
 
 .containerActividadReciente{
     margin:5%
+    
 }
 /*estilos de las cajas de actividad reciente*/
 
@@ -81,11 +90,13 @@ body{
     margin-right: 5%;
 }
 .box{
-    background-color: #1D3C5E;
+    /* background-color: #1D3C5E; */
+    background: linear-gradient(to top, #09203f 0%, #537895 100%);
     padding: 2%;
     border-radius: 21px;
     margin: 3%;
     text-align: justify;
+    font-size: 24px;
 }
 .redondearImgBox{
     border-radius: 50px;

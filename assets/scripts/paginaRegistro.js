@@ -94,30 +94,81 @@ function registrarUsuario(){
 
 
     else{
-        divContent = `
-        <div class="alert alert-success fixed-top" role="alert">
-        <strong>Cuenta registrada</strong>
-
-        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
        
-      </div>`;
 
       //se crea el usuario
 
       var Usuario = {
-        Nombre: formUsuario.value,
-        Fecha: formNacimiento.value,
-        Correo: formCorreo.value,
-        Numero: formNumero.value,
-       Password: password.value
+        nombre: formUsuario.value,
+        email: formCorreo.value,
+        telefono: formNumero.value,
+       contrasena: password.value,
+       fecha: formNacimiento.value
 
       };
 
+      fetch("https://deploy-production-b07c.up.railway.app/shelfshare/users", {
+          method: "POST", // or 'PUT'
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(Usuario), //Aqui estoy llamando a mi cuerpo de la solicitud.
+        })
+          .then((response) => response.text())
+          .then((data) => {
+
+            if (data== ''){
+
+
+              divContent = `
+              <div class="alert alert-danger fixed-top" role="alert">
+              <strong>Correo en uso</strong>
+      
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+             
+            </div>`;
+            alertDiv.innerHTML+=divContent;
+
+              console.log("Usuario ya existe"); //Mensaje para cuando se agreguen los datos correctamente
+            }else{
+
+              divContent = `
+              <div class="alert alert-success fixed-top" role="alert">
+              <strong>Cuenta registrada</strong>
+      
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+             
+            </div>`;
+
+            
+
+
+            alertDiv.innerHTML+=divContent;
+              console.log("Usuario Guardado:", data); //Mensaje para cuando se agreguen los datos correctamente
+            }
+            
+          })
+          .catch((error) => {
+            console.error("Error:", error);
+          });
+
+
+
+
+
+
+
+
+
+
+
+
+
       //se convierte a formato JSON
 
-      var usuarioJson = JSON.stringify(Usuario);
+      //var usuarioJson = JSON.stringify(Usuario);
 
-    console.log(usuarioJson);
+    //console.log(usuarioJson);
 
 
     }

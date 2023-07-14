@@ -24,19 +24,21 @@ h2{
    background-color:#1D3C5E;
    border-radius: 35px;
   
-   padding-inline-start: 35px;
-   padding-inline-end: 35px;
+   padding-inline-start: 4%;
+   padding-inline-end: 4%;
 
    margin-top: 5%;
 
-
+   width: 45%;
+   /* height: 40%; */
    
 }
 
 .containerTerminos{
-  margin-top: 5%;
+  margin-top: 10%;
   padding-inline-start: auto;
   padding-inline-end: auto;
+  margin-left: 5%;
 }
 
 .imageContainer img{
@@ -110,8 +112,8 @@ footer{
   text-decoration: none;
   color: white;
   font-family: 'Josefin Sans';
-  font-weight: bold;
-  font-size: 24px;
+  /* font-weight: bold; */
+  /* font-size: 24px; */
   
   
 }

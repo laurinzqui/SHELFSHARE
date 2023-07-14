@@ -18,25 +18,38 @@ function loginUsuario(username, password) {
 
     //validacion de credenciales
 
-    if (username == localStorage.username) {
-        //si el usuario existe:
 
-        if (password == localStorage.password) {
-            //si la contraseña es correcta:
+    fetch(`https://deploy-production-b07c.up.railway.app/shelfshare/users/${username}`, {
+      method: "GET", // or 'PUT'
+    }).then(function(response) {//response es la respuesta del servidor
+      response.json().then(function (json) { 
+        
+        
+        //json es el objeto que se obtiene del servicio
+
+        if(json==null){
+            console.log("Usuario no existe")
             divContent = `
-            <div class="alert alert-success fixed-top" role="alert">
-            <strong>Bienvenido ${username}</strong>
+            <div class="alert alert-warning fixed-top" role="alert">
+            <strong>usuario inexistente</strong> Completa el campo correctamente.
     
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
            
-          </div>`;
+          </div>
+          `;
 
-            //HTTP redirect:
-            window.location.replace("../paginaPrincipal.html");
 
-        }
-        else {
-            divContent = `
+
+        }else if(json.contrasena == password){
+           console.log("credenciales correctas")
+          //HTTP redirect:
+          window.location.replace("../paginaPrincipal.html");
+
+
+        }else{
+
+
+          divContent = `
         <div class="alert alert-warning fixed-top" role="alert">
         <strong>contraseña incorrecta</strong> Completa el campo correctamente.
 
@@ -44,22 +57,73 @@ function loginUsuario(username, password) {
        
       </div>
       `;
-
+          console.log("contraseña incorrecta")
         }
+          
+          
+         
+      });//then
+  }).catch(function(err) { //si hay un error
+      console.log(err); //imprime el error
+  });
 
 
 
-    }
-    else {
-        divContent = `
-        <div class="alert alert-warning fixed-top" role="alert">
-        <strong>usuario incorrecto</strong> Completa el campo correctamente.
 
-        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+
+
+
+
+
+
+
+
+
+
+
+
+    // if (username == localStorage.username) {
+    //     //si el usuario existe:
+
+    //     if (password == localStorage.password) {
+    //         //si la contraseña es correcta:
+    //         divContent = `
+    //         <div class="alert alert-success fixed-top" role="alert">
+    //         <strong>Bienvenido ${username}</strong>
+    
+    //         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+           
+    //       </div>`;
+
+    //         //HTTP redirect:
+    //         window.location.replace("../paginaPrincipal.html");
+
+    //     }
+    //     else {
+    //         divContent = `
+    //     <div class="alert alert-warning fixed-top" role="alert">
+    //     <strong>contraseña incorrecta</strong> Completa el campo correctamente.
+
+    //     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
        
-      </div>
-      `;
-    }
+    //   </div>
+    //   `;
+
+    //     }
+
+
+
+    // }
+    // else {
+    //     divContent = `
+    //     <div class="alert alert-warning fixed-top" role="alert">
+    //     <strong>usuario incorrecto</strong> Completa el campo correctamente.
+
+    //     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+       
+    //   </div>
+    //   `;
+    // }
 
 
 

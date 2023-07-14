@@ -69,7 +69,7 @@ body::before {
 }
 .nameDeveloper p {
   margin-top: 2%;
-  font-size: larger;
+  font-size: 30px;
 }
 
 /*estilos de imageTextContainer*/
@@ -101,8 +101,9 @@ body::before {
 
 /*estilos de la etiqueta p*/
 p{
-  font-size: 25px;
-  font-weight:bolder;
+  font-size: 28px;
+  /* font-weight:bolder; */
+  padding: 5%;
 }
 /*Estilos de imageContainer*/
 .imageContainer {
@@ -141,5 +142,5 @@ footer {
   text-decoration: none;
   color: white;
   font-family: 'Josefin Sans';
-  font-weight: bold;
+  /* font-weight: bold; */
 }

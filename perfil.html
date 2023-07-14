@@ -19,6 +19,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
         integrity="sha512-XAqLlGSrURDvHfvjqg0dpJN57mqI9XjdZ+yBVc0tmrhBwnzF7bu9/1yfObBInTJztar+mDsJszIgKtBrf2Fubg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Enlace de iconos-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
+
 
 
 
@@ -58,6 +62,7 @@
     </nav>
 
     <!--Cuerpo del Contenido de la primera fila-->
+   
     <div class="containerPerfil">
         <div class="row">
 
@@ -66,8 +71,10 @@
             <div class="row">
 
                 <div class="col-sm-12 col-md-12 col-lg-6 ">
-                    <div class="perfilusuarios">
+                    <div class="shadow shadow-lg">
                         <!-- usar h1/h2 para algun titulo-->
+                      
+                       
                     </div>
                 </div>
 
@@ -76,32 +83,34 @@
         </div>
 
         <div class="containerImageText">
-            <div class="row">
+            <div class="row ">
 
                 <div class="col-sm-12 col-md-6 col-lg-6">
                     <div class="imageContainer" id="firstImageSlide">
 
                         <img id="imagen" src="assets/imgs/Rafael.jpg" alt="Imagen de perfil" class="rounded-circle">
-                        <button onclick="cambiarImagen()">Cambiar Imagen</button>
+                       
+                        <img id="imagenCambiar" src="/assets/imgs/camaraTransparente.png" onclick="cambiarImagen()" alt="Cambiar Imagen de perfil">
+                        
 
                     </div>
 
 
                 </div>
                 <!--Texto del contenedor perfil-->
-                <div class="col-sm-12 col-md-6 col-lg-6">
+                <div class="col-sm-12 col-md-6 col-lg-6" style="text-align: left;">
 
                     <div class="imageTextContainer" id="firstTextSlide">
                         <div class="profile-info">
                             <span class="profile-info-label">Nombre:</span>
-                            <span id="UserInfoNombre" class="profile-info-value">Rafael</span><br>
+                            <span id="UserInfoNombre" class="profile-info-value">Rafael</span><br><br>
 
                             <span class="profile-info-label">Género de Libros:</span>
-                            <span id="UserInfoGeneroLibros" class="profile-info-value">Horror, Suspenso</span><br>
+                            <span id="UserInfoGeneroLibros" class="profile-info-value">Horror, Suspenso</span><br><br>
 
                             <span class="profile-info-label">Acerca de mí:</span>
                             <span id="UserInfoAcercaDeMi" class="profile-info-value">Soy una persona apasionada por los
-                                libros</span><br>
+                                libros</span><br><br>
 
                             <span class="profile-info-label">Redes sociales:</span>
                             <span id="UserInfoRedesSociales" class="profile-info-value">
@@ -111,7 +120,7 @@
                             </span>
                         </div>
 
-                        <button type="button" class="collapsible">Editar</button>
+                        <button type="button" class="collapsible">  <i class="fas fa-pencil-alt"></i></button>
                         <div class="content">
                             <form id="editForm">
                                 <div class="form-group">
@@ -157,8 +166,8 @@
     </div>
 
     <!--Contenido de la fila secundaria-->
-    <div class="containerContenido" style="text-align: center;">
-        <div class="row">
+    <div class="containerContenido shadow" style="text-align: center;">
+        <div class="row ">
             <!-- Contenido de la primera columna secundaria -->
             <div class="col-sm-12 col-md-6 col-lg-6">
                 <div class="contenidoBiblioteca">
@@ -167,7 +176,7 @@
                     </div>
     
                     <div class="card text-center">
-                        <img src="assets/imgs/principitoLanding.png" class="card-img-top" alt="...">
+                        <img src="assets/imgs/harryPotter.jpg" class="card-img-top" alt="...">
                     </div><br>
                     <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75"
                         aria-valuemin="0" aria-valuemax="100">
@@ -175,7 +184,7 @@
                     </div>
     
                     <div class="card text-center">
-                        <img src="assets/imgs/principitoLanding.png" class="card-img-top" alt="...">
+                        <img src="assets/imgs/milYUnaNoche.jpg" class="card-img-top" alt="...">
                     </div><br>
                     <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75"
                         aria-valuemin="0" aria-valuemax="100">
@@ -183,7 +192,7 @@
                     </div>
     
                     <div class="card text-center">
-                        <img src="assets/imgs/principitoLanding.png" class="card-img-top" alt="...">
+                        <img src="assets/imgs/coverIslaTesoro.png" class="card-img-top" alt="...">
                     </div><br>
                     <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="50"
                         aria-valuemin="0" aria-valuemax="100">
@@ -193,26 +202,26 @@
             </div>
     
             <div class="col-sm-12 col-md-6 col-lg-6">
-                <div class="contenidoReseña">
+                <div class="contenidoReseña shadow">
                     <!-- Contenido de la segunda columna secundaria -->
                     <div class="container" id="containerTarjetas">
                         <h1>Reseñas</h1><br><br>
                     </div>
     
                     <div class="card text-center">
-                        <img src="assets/imgs/principitoLanding.png" class="card-img-top" alt="...">
+                        <img src="assets/imgs/coverMobyDick.png" class="card-img-top" alt="...">
                     </div><br>
                     <span>&#9733;&#9733;&#9733;</span>
     
                     <div class="card text-center">
-                        <img src="assets/imgs/principitoLanding.png" class="card-img-top" alt="...">
+                        <img src="assets/imgs/cover1984.png" class="card-img-top" alt="...">
                     </div><br>
                     <span>&#9733;&#9733;&#9733;&#9733;</span>
     
                     <div class="card text-center">
-                        <img src="assets/imgs/principitoLanding.png" class="card-img-top" alt="...">
+                        <img src="assets/imgs/coverLibroJapanese.png" class="card-img-top" alt="...">
                     </div><br>
-                    <span>&#9733;&#9733;&#9733;</span>
+                    <span>&#9733;&#9733;&#9733;&#9733;</span>
                 </div>
             </div>
         </div>

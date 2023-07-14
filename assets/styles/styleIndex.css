@@ -1,0 +1,99 @@
+/* Estilo navbar */
+
+.navbar-light {
+  background-color: #1D3C5E;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.navbar-brand,
+.nav-link {
+  color: white;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 600;
+}
+
+#linkNavegación {
+  font-weight: 100;
+}
+
+/* Estilo cuerpo */
+
+/* body {
+  background-color: #0D1925;
+  padding-bottom: 40px;
+} */
+
+body {
+	/* background: linear-gradient(-45deg, #428bca,#244a73); */
+  /* background: linear-gradient(to top, #09203f 0%, #537895 100%); */
+  background-image: url("../imgs/123.jpg");
+    background-size: cover;
+	background-size: 400% 400%;
+	animation: gradient 20s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.imagenPrincipal {
+  margin-left: 20px;
+  height: 500px;
+}
+
+/* Estilo footer */
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  text-align: right;
+  background-color: transparent;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.footer a {
+  color: white;
+  font-family: 'Josefin Sans', sans-serif;
+  text-decoration: none;
+  margin-right: 50px;
+  font-size: 24px;
+}
+
+.textoPrincipal {
+  color: white;
+  font-family: 'EB Garamond', serif;
+  font-size: 32px;
+  text-align: center;
+  align-items: center;
+  margin-right: 200px;
+}
+
+.textoTitulo {
+  color: white;
+  font-family: 'EB Garamond', serif;
+  font-size: 40px;
+  text-align: center;
+  align-items: center;
+  margin-right: 200px;
+}
+
+.displayPrincipal {
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  margin-top: 10%;
+}

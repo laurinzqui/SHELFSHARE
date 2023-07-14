@@ -1,4 +1,3 @@
-
 /*Script para formulario de check genero
 document.getElementById("form").addEventListener("submit", function(event) {
     event.preventDefault(); // para evitar el envío del formulario por defecto

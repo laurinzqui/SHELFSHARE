@@ -1,6 +1,8 @@
 body {
   /* background-color: rgba(4, 68, 136, 0.9); */
-  background: linear-gradient(to top, #09203f 0%, #537895 100%);
+  /* background: linear-gradient(to top, #09203f 0%, #537895 100%); */
+  background-image:url(../imgs/123.jpg);
+  background-size: cover;
   color: white;
   font-family: 'Josefin Sans', sans-serif;
 }
@@ -198,3 +200,14 @@ p{
 
 }
 /* CSS PARA QUE EL PRIMER COMENTARIO TENGA ESTILO */
+
+.lectorPdf {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* .lectorPdf iframe {
+  max-width: 100%;
+  max-height: 100%;
+  border: none;
+} */

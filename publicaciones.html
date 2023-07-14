@@ -1,172 +1,139 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Book Reader</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publicaciones Prueba</title>
 
-  <!-- BOOTSTRAP CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- CSS BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 
-  <!-- CSS LOCAL -->
-  <link rel="stylesheet" href="./assets/styles/stylePublicaciones.css">
-  <link rel="stylesheet" href="./assets/styles/styleNavBar.css">
+    <!-- CSS LOCAL -->
+    <link href="./assets/styles/stylePublicacionesPrueba.css" rel="stylesheet">
 
-  <!-- FONTS -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap">
+    <!-- CSS NAVBAR -->
+    <link href="./assets/styles/styleNavBar.css" rel="stylesheet">
 
+    <!-- FONTS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap">
 </head>
 
 <body>
-  <nav class="navbar fixed-top navbar-expand-lg navbar-light">
-    <div class="container-fluid">
-      <a class="navbar-brand">SHELFSHARE</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a href="index.html" class="nav-link" id="homeText">
-              INICIO
-            </a>
-          </li>
-          <li class="nav-item active">
-            <a href="perfil.html" class="nav-link" id="perfilText">
-              PERFIL
-            </a>
-          </li>
-          <li class="nav-item active">
-            <a href="#" class="nav-link" id="notificacionesText">NOTIFICACIONES</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
 
-  <div class="container">
-    <div id="pdfViewer">
-      <embed src="./assets/imgs/ElPrincipito capitulo 1.pdf" type="application/pdf" width="100%" height="100%">
-    </div>
-  </div>
-  <br>
-  <br>
-  <div class="navegar">
-    <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-      <button type="button" class="btn btn-primary">Anterior capitulo</button>
-      <br>
-      <div class="btn-group" role="group">
-        <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-          índice
-        </button>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#">Capitulo 1</a></li>
-          <li><a class="dropdown-item" href="#">Capitulo 2</a></li>
-          <li><a class="dropdown-item" href="#">Capitulo 3</a></li>
-          <li><a class="dropdown-item" href="#">Capitulo 4</a></li>
-          <li><a class="dropdown-item" href="#">Capitulo 5</a></li>
-          <li><a class="dropdown-item" href="#">Capitulo 6</a></li>
-          <li><a class="dropdown-item" href="#">Capitulo 7</a></li>
-          <li><a class="dropdown-item" href="#">Capitulo 8</a></li>
-          <li><a class="dropdown-item" href="#">Capitulo 9</a></li>
-          <li><a class="dropdown-item" href="#">Capitulo 10</a></li>
-          <li><a class="dropdown-item" href="#">Capitulo 11</a></li>
-          <li><a class="dropdown-item" href="#">Capitulo 12</a></li>
-          <li><a class="dropdown-item" href="#">Capitulo 13</a></li>
-        </ul>
-
-        <button type="button" class="btn btn-primary">Siguiente capitulo</button>
-      </div>
-
-
-    </div>
-  </div>
-
-
-
-  <div id="commentsContainer">
-    <div id="comments">
-      <h2 class="CommentTitle">Comentarios</h2>
-  
-      <div id="commentList"></div>
-      <div id="NewComment">
-        <div class="comment-input">
-          <div class="comment-header">
-            <img class="comment-photo" src="./assets/imgs/Brandon.jpg" alt="Foto Brandon">
-            <h3 class="comment-author">@TuNombreDeUsuario</h3>
-          </div>
-          <div class="comment-content">
-            <textarea class="form-control" placeholder="Escribe un comentario aquí" id="floatingTextarea"></textarea>
-            <button type="button" class="btn btn-outline-primary" onclick="postComment()">Enviar</button>
-          </div>
+    <!-- NAVBAR -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" style="pointer-events: none; color: white !important;">SHELFSHARE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a href="paginaPrincipal.html" class="nav-link" id="homeText">
+                            INICIO
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="perfil.html" class="nav-link" id="perfilText">
+                            PERFIL
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="./bookLibrary.html" class="nav-link" id="notificacionesText">BIBLIOTECA</a>
+                    </li>
+                    <!-- <li class="nav-item active">
+                    <a href="#" class="nav-link" id="notificacionesText">NOTIFICACIONES</a>
+                </li> -->
+                </ul>
+            </div>
         </div>
-      </div>
-      <br>
-      <div id="previousComments">
-        <div class="comment">
-          <div class="comment-header">
-            <img class="profile-photo" src="./assets/imgs/angel.jpg" alt="Foto Ángel">
-            <h3 class="comment-author">@Ángel258</h3>
-            <p class="comment-time">Publicado el 3 de julio de 2023 a las 10:30 AM</p>
-          </div>
-          <div class="comment-content">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi velit pariatur recusandae dolor
-              quisquam! Suscipit molestiae mollitia voluptatibus facere, earum doloribus? Veritatis aspernatur quis
-              sapiente magnam et recusandae eos veniam.</p>
-            <button class="reply-btn" onclick="startThread(this)">Responder</button>
-            <div class="replies">
-              <div class="reply">
-                <div class="reply-header">
-                  <img class="profile-photo" src="./assets/imgs/Brandon.jpg" alt="Foto Brandon">
-                  <h3 class="reply-author">@TuNombreDeUsuario</h3>
-                  <p class="reply-time">Publicado el 4 de julio de 2023 a las 2:15 PM</p>
+    </nav>
+
+    <!-- CONTENIDO DE LA PAGINA -->
+    <div class="container">
+
+        <div class="lectorPdf">
+
+            <!-- <embed src="./assets/imgs/ElPrincipito capitulo 1.pdf" type="application/pdf" width="100%" height=700px> -->
+            <iframe src="https://docs.google.com/viewer?url=https://drive.google.com/uc?id=1AN0A7q9FHdfGyrBkpUa99r48zsVznGkd&embedded=true" width="600" height="780" style="border: none;"></iframe>
+
+        </div>
+
+        <br>
+
+        <!-- COMENTARIO EJEMPLO -->
+        <div id="commentsContainer" class="mx-2 px-5">
+            <div id="comments">
+              <h2 class="CommentTitle">Comentarios</h2>
+      
+              <div id="commentList"></div>
+              <div id="NewComment" class="rounded-5 s m-5 pb-3 px-5 shadow-lg">
+                <div class="comment-input">
+                  <div class="commentInsert-header">
+                    <img class="comment-photo" src="./assets/imgs/Brandon.jpg" alt="Foto Brandon">
+                    <h3 class="comment-author">@BranMan94</h3>
+                  </div>
+                  <div class="comment-content">
+                    <textarea class="form-control" placeholder="Escribe un comentario aquí" id="floatingTextarea"></textarea>
+                    <button type="button" class="btn btn-dark" onclick="postComment()">Enviar</button>
+                  </div>
                 </div>
-                <div class="reply-content">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, reprehenderit temporibus
-                    perferendis nobis animi earum quod ad cum modi. Rerum corporis ex quia eius? Error fugit quo
-                    voluptatum! Qui, praesentium.</p>
-                  <button class="reply-btn" onclick="startThread(this)">Responder</button>
+              </div>
+              <br>
+              <div id="previousComments">
+                <div class="comment shadow-lg">
+                  <div class="comment-header">
+                    <img class="profile-photo d-inline" src="./assets/imgs/angel.jpg" alt="Foto Ángel">
+                    <h3 class="comment-author d-inline">@AngelChan</h3>
+                    <p class="comment-time">Publicado el 3 de julio de 2023 a las 10:30 AM</p>
+                  </div>
+                  <div class="comment-content">
+                    <p>Wow! Este libro realmente cambio mi vida, tocó mi corazón y revolucionó la manera en la que me muevo por el mundo.</p>
+                    <button class="reply-btn" onclick="startThread(this)">Responder</button>
+                    <div class="replies me-5">
+                      <div class="reply mb-3">
+                        <div class="reply-header">
+                          <img class="profile-photo d-inline" src="./assets/imgs/Brandon.jpg" alt="Foto Brandon">
+                          <h3 class="reply-author d-inline">@BranMan94</h3>
+                          <p class="reply-time">Publicado el 4 de julio de 2023 a las 2:15 PM</p>
+                        </div>
+                        <div class="reply-content">
+                          <p>¡Me alegra muchísimo oír eso! Los libros tienen una capacidad asombrosa para inspirarnos, hacernos reflexionar y transformar nuestras vidas. Es increíble que hayas encontrado un libro que haya tenido un impacto tan profundo en ti.</p>
+      
+                          <button class="reply-btn" onclick="startThread(this)">Responder</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="comment">
+                  <div class="comment-header">
+                    <img class="profile-photo d-inline" src="./assets/imgs/Aramis.jpg" alt="Foto Aramis">
+                    <h3 class="comment-author d-inline">@Aramis548</h3>
+                    <p class="comment-time">Publicado el 2 de julio de 2023 a las 5:45 PM</p>
+                  </div>
+                  <div class="comment-content">
+                    <p>Es una obra encantadora que ha cautivado a lectores de todas las edades en todo el mundo. A través de la historia de un joven príncipe que viaja por diferentes planetas, nos invita a reflexionar sobre la amistad, el amor y la importancia de apreciar las cosas simples de la vida. Con su narrativa poética y sus ilustraciones, nos enseña valiosas lecciones sobre ver más allá de lo superficial y descubrir el verdadero valor de las personas y las relaciones.</p>
+                    <button class="reply-btn" onclick="startThread(this)">Responder</button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="comment">
-          <div class="comment-header">
-            <img class="profile-photo" src="./assets/imgs/Aramis.jpg" alt="Foto Aramis">
-            <h3 class="comment-author">@Aramis548</h3>
-            <p class="comment-time">Publicado el 2 de julio de 2023 a las 5:45 PM</p>
-          </div>
-          <div class="comment-content">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia recusandae nisi corporis quo repellendus,
-              deleniti, maiores impedit autem quas sit doloremque praesentium expedita commodi. Non saepe maiores illum
-              officia quam.</p>
-            <button class="reply-btn" onclick="startThread(this)">Responder</button>
-          </div>
-        </div>
-      </div>
+
     </div>
-  </div>
 
+    <!-- JS LOCAL -->
+    <script src="./assets/scripts/publicacionesPrueba.js"></script>
 
-  <!-- <footer class="footer">
-    <div class="containerFooter">
-      <a href="contactanos.html">Contacto</a>
-      <a href="nosotros.html">Acerca de Nosotros</a>
-    </div>
-  </footer> -->
-
-  <!-- BOOTSTRAP JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-
-  <!-- JS LOCAL -->
-  <script src="./assets/scripts/publicaciones.js"></script>
-
-
+    <!-- JS BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
