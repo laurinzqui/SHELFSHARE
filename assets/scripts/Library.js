@@ -14,23 +14,23 @@ var arrayLibros = [];
 //lista de libros
 arrayLibros.push(new libro("El Principito", "Antoine de Saint-Exupéry y Kan Nozaki", "https://upload.wikimedia.org/wikipedia/commons/1/1c/El_principito.jpg", "Fecha de Publicación"))
 
-arrayLibros.push(new libro("El Principito", "Antoine de Saint-Exupéry y Kan Nozaki", "https://upload.wikimedia.org/wikipedia/commons/1/1c/El_principito.jpg", "Fecha de Publicación"))
+arrayLibros.push(new libro("Harry Potter y el prisionero de Azkaban ", "J.k. Rowling", "./assets/imgs/harryPotter.jpg", "1999"))
 
-arrayLibros.push(new libro("El Principito", "Antoine de Saint-Exupéry y Kan Nozaki", "https://upload.wikimedia.org/wikipedia/commons/1/1c/El_principito.jpg", "Fecha de Publicación"))
+arrayLibros.push(new libro("Moby Dick", "Herman Melville", "./assets/imgs/coverMobyDick.png", "1851"))
 
-arrayLibros.push(new libro("El Principito", "Antoine de Saint-Exupéry y Kan Nozaki", "https://upload.wikimedia.org/wikipedia/commons/1/1c/El_principito.jpg", "Fecha de Publicación"))
+arrayLibros.push(new libro("Escrituras españolas del siglo XIX", "Maria Del Carmen Simón Palmer", "./assets/imgs/LibroEspañol.jpg", "Fecha de Publicación"))
 
-arrayLibros.push(new libro("El Principito", "Antoine de Saint-Exupéry y Kan Nozaki", "https://upload.wikimedia.org/wikipedia/commons/1/1c/El_principito.jpg", "Fecha de Publicación"))
+arrayLibros.push(new libro("Alicia en el país de las maravillas", "Lewis Carroll", "./assets/imgs/aliciaPaisMaravillas.jpg", "1860"))
 
-arrayLibros.push(new libro("El Principito", "Antoine de Saint-Exupéry y Kan Nozaki", "https://upload.wikimedia.org/wikipedia/commons/1/1c/El_principito.jpg", "Fecha de Publicación"))
+arrayLibros.push(new libro("Mil y unas noches", "anonimo", "./assets/imgs/milYUnaNoche.jpg", "1814 a 1818"))
 
-arrayLibros.push(new libro("El Principito", "Antoine de Saint-Exupéry y Kan Nozaki", "https://upload.wikimedia.org/wikipedia/commons/1/1c/El_principito.jpg", "Fecha de Publicación"))
+arrayLibros.push(new libro("La isla del tesoro", "Robert Louis Stevenson", "./assets/imgs/coverIslaTesoro.png", "1883"))
 
-arrayLibros.push(new libro("El Principito", "Antoine de Saint-Exupéry y Kan Nozaki", "https://upload.wikimedia.org/wikipedia/commons/1/1c/El_principito.jpg", "Fecha de Publicación"))
+arrayLibros.push(new libro("Ana de las tejas ", "Lucy Maud Montgomery", "./assets/imgs/anaDeLasTejasVerdes.jpg", "1908"))
 
-arrayLibros.push(new libro("El Principito", "Antoine de Saint-Exupéry y Kan Nozaki", "https://upload.wikimedia.org/wikipedia/commons/1/1c/El_principito.jpg", "Fecha de Publicación"))
+arrayLibros.push(new libro("Crimen y castigo", "Fedor M.Dostoievski", "./assets/imgs/crimenYCastigo.jpg", "1866"))
 
-arrayLibros.push(new libro("El Principito", "Antoine de Saint-Exupéry y Kan Nozaki", "https://upload.wikimedia.org/wikipedia/commons/1/1c/El_principito.jpg", "Fecha de Publicación"))
+arrayLibros.push(new libro("El fantasma de Canterville", "Oscar Wilde", "./assets/imgs/elFantasmaDeCanterville.jpg", "1887"))
 
 
 

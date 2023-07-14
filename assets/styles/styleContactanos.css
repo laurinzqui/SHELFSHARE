@@ -1,7 +1,6 @@
 /*Cuerpo de toda la pagina y fondo*/
 body {
-  background-image: url("../imgs/background.jpg");
-  background-size: cover;
+ background-color: #1D3C5E;
 }
 
 body::before {
@@ -28,6 +27,7 @@ h2{
    padding-inline-end: 35px;
 
    margin-top: 5%;
+   font-size: 32px;
 
 
    

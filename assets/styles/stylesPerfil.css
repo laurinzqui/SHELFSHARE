@@ -4,41 +4,36 @@ body {
   background: linear-gradient(45deg, rgb(9, 62, 119), rgb(9, 2, 38));
 }
 
+
+
+
 /* Estilo Fila primaria */
 .containerPerfil {
   width: 90%;
  
-  
     background-color:#1D3C5E;
-   
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 10%;
+    margin-top: 13%;
     margin-bottom: 5%;
     border-radius: 52px;
     font-family: 'Josefin Sans';
     text-align: center;
-    border-block: 5px solid;color:#061c32(1, 8, 36);
-   
-    
 
 }
-::placeholder{
-  background-color: #1D3C5E;
-  font-size: 24px;color: aliceblue;
 
-}
 
 .imageContainer {
-  display: block;
-    justify-content: justify;
+  display:block;
+    justify-content:center;
     align-items: center;
     max-width: 100%;
     height:auto;
     overflow: hidden;
     padding: 20px;
     margin:10%;
+    object-fit: contain;
 }
 .imageContainer img{
     
@@ -51,13 +46,13 @@ body {
   
 }
 
+
+
 /*Boton camara*/
-#botonImagen{
-  border-radius: 2%;
-  font-size: 16px;
-  color: rgb(1, 1, 18);
-  padding: 5px;
-   float: left;
+#imagenCambiar{
+  float: left;
+  width: 10%;
+   
 }
 
 /* Texto de contenedor perfil*/
@@ -66,7 +61,6 @@ body {
   padding: 15%;
 
 }
-
 
 
 /* Estilo Fila secundaria */
@@ -80,8 +74,6 @@ body {
   
   margin-bottom: 30%;
   padding: 45px;
-  border-block: 5px solid;color:#061c32(1, 8, 36);
-
 
 }
 
@@ -93,8 +85,7 @@ body {
 
 .card {
   max-width: 100%;
- 
-  
+  margin-top: 15px;
 }
 
 @media (min-width: 410px) {
@@ -105,8 +96,6 @@ body {
 }
 
 
-
-
 .contenidoReseña {
   background-color: #1D3C5E;
   border-radius: 20px;
@@ -115,7 +104,7 @@ body {
   margin-right: auto;
   margin-bottom: 30%;
   padding: 45px;
-  border-block: 5px solid;color:#061c32(1, 8, 36);
+ 
   
 }
 
@@ -133,6 +122,7 @@ h1 {
     text-shadow: 5px 5px 10px #97bdde;
   
 }
+
 
 span{
   font-family: 'Josefin Sans';
@@ -178,12 +168,16 @@ footer {
 /*Boton para colapsar*/
 .collapsible {
   background-color: #244b75;
-  color: rgb(177, 198, 224);
-  padding: 5px;
-  width: 40%;
+  color: rgb(234, 239, 246);
+  padding: 4px;
+  width: 12%;
   text-align: center;
   outline: none;
   float: right;
+  margin: 10px;
+  white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+  overflow: hidden; /* Oculta cualquier contenido que exceda el tamaño del botón */
+  text-overflow: ellipsis; 
   
 }
 /*Icono de lápiz*/
