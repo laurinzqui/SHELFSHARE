@@ -76,7 +76,7 @@ function postComment() {
   
     const replyAuthor = document.createElement('h3');
     replyAuthor.classList.add('reply-author');
-    replyAuthor.textContent = '@TuUsuario';
+    replyAuthor.textContent = '@BranMan94';
   
     const replyTime = document.createElement('p');
     replyTime.classList.add('reply-time');
@@ -134,7 +134,7 @@ function postComment() {
   
     const replyAuthor = document.createElement('h3');
     replyAuthor.classList.add('reply-author');
-    replyAuthor.textContent = '@TuUsuario';
+    replyAuthor.textContent = '@BranMan94';
   
     const replyTime = document.createElement('p');
     replyTime.classList.add('reply-time');
